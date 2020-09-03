@@ -19,7 +19,7 @@ code {
   text-align: center;
 }
 
-.todoContainer {
+.container {
   width: 90%;
   max-width: 550px;
   margin: auto;
@@ -49,15 +49,54 @@ code {
   flex-direction: row;
   padding: 5px 20px;
   margin: 15px;
-  background-color: #181818;
+  font-size: 1.3em;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
   transition: all ease 0.2s;
 }
 
 .todo:hover {
-  background-color: #323232;
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: default;
 }
 
 .todo button {
   background-color: #ed5e67;
+}
+
+form {
+  margin: 50px 20px;
+  padding: 0 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(-10px);
+}
+
+form label {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #181818;
+  padding: 0 7px;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  padding: 5px 8px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: white;
+  background-color: #181818;
+  border-bottom: 2px solid rgba(237, 94, 103, 0.5);
+  transition: all ease-out 0.2s;
+}
+
+form input:focus {
+  border-bottom: 2px solid rgba(237, 94, 103, 1);
 }
