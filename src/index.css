@@ -39,15 +39,23 @@ code {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  margin: 10px;
+  flex-direction: row;
+  padding: 5px 20px;
+  margin: 15px;
+  background-color: #181818;
+  transition: all ease 0.2s;
+}
+
+.todo:hover {
+  background-color: #323232;
+  cursor: pointer;
 }
 
 .todo button {

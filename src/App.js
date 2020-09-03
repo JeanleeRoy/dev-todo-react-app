@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="center">Por hacer</h1>
+      <h1 className="center white-text">Por hacer</h1>
       <Todo todos={todos} deleteTodo={deleteTodo} />
     </div>
   );

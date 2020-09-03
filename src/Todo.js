@@ -4,7 +4,7 @@ import deleteIcon from "./assets/images/delete.svg";
 const Todo = ({ todos, deleteTodo }) => {
   const todoList = todos.map((todo) => {
     return (
-      <div className="todo" key={todo.id}>
+      <div className="mdc-card todo" key={todo.id}>
         <p>{todo.content}</p>
         <button className="btn" onClick={() => deleteTodo(todo.id)}>
           <img src={deleteIcon} className="deleteIcon" alt="delete" />
