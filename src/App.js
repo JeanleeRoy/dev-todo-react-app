@@ -6,10 +6,18 @@ function App() {
     { id: 1, content: "Primer contenido" },
     { id: 2, content: "Segundo contenido" },
   ]);
+
+  const deleteTodo = (id) => {
+    const newTodos = todos.filter((todo) => {
+      return todo.id !== id;
+    });
+    setTodos(newTodos);
+  };
+
   return (
     <div className="App">
-      <h1>Por hacer</h1>
-      <Todo todos={todos} />
+      <h1 className="center">Por hacer</h1>
+      <Todo todos={todos} deleteTodo={deleteTodo} />
     </div>
   );
 }
