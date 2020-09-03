@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Todo from "./Todo";
 
 function App() {
   const [todos, setTodos] = useState([
@@ -7,10 +8,8 @@ function App() {
   ]);
   return (
     <div className="App">
-      <h1>Todos</h1>
-      {todos.map((todo) => {
-        return <div>{todo.content}</div>;
-      })}
+      <h1>Por hacer</h1>
+      <Todo todos={todos} />
     </div>
   );
 }
