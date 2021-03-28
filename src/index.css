@@ -93,10 +93,11 @@ form input {
   font-size: 1.1em;
   color: white;
   background-color: #181818;
-  border-bottom: 2px solid rgba(237, 94, 103, 0.5);
-  transition: all ease-out 0.2s;
+  border-bottom: 2px solid rgba(237, 94, 103, 0.4);
+  transition: all ease-out 0.3s;
 }
 
 form input:focus {
-  border-bottom: 2px solid rgba(237, 94, 103, 1);
+  outline: none;
+  border-bottom: 2px solid #ed5e67;
 }
